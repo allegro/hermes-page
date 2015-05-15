@@ -117,6 +117,10 @@ main > div section + section {
 	flex: 1 1 200px;
 }
 
+main section:first-child h2 {
+	font-size: 21px;
+}
+
 @media all and (min-width:440px) {
 	main > div section{
 		padding: 15px;
