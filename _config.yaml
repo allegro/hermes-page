@@ -1,0 +1,13 @@
+---
+
+port: 4000
+host: 0.0.0.0
+safe: false
+
+markdown: kramdown
+highlighter: pygments
+
+title:       "Hermes"
+keywords:    "hermes, kafka, message broker, messaging, events"
+description: "Reliable and easy to use message broker."
+source_link: "https://github.com/allegro/hermes"

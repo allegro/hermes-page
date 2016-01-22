@@ -1,0 +1,91 @@
+
+div.hero-bullets {
+    color: #bbbbbb;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+div.hero-bullets a:hover {
+    text-decoration: none;
+}
+
+div.hero-bullet span {
+    color: #bbbbbb;
+}
+
+div.hero-bullet:hover span {
+    color: #777;
+}
+
+div.hero-bullet i {
+    color: #e7e7e7;
+}
+
+div.hero-bullet:hover i {
+    color: #1f7ccc;
+}
+
+h2 {
+    color: #777;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    margin-left: 1.5em;
+}
+
+section {
+    border-top: 2px solid #1f7ccc;
+    font-size: 14px;
+    padding-bottom: 4em;
+}
+
+section p {
+    margin-left: 5em;
+    margin-right: 5em;
+    line-height: 1.5em;
+}
+
+section i {
+    color: #777;
+}
+
+section:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.why-bullets {
+    color: #777;
+}
+
+.why-bullets li:hover {
+    color: #1f7ccc;
+}
+
+.why-bullets ul {
+    list-style-type: none;
+}
+
+.why-bullets i {
+    width: 1em;
+}
+
+.why-bullets li {
+    margin-top: 3em;
+}
+
+.team img {
+    width: 100px;
+    height: 100px;
+}
+
+.team a {
+    color: #777;
+    text-decoration: none;
+}
+
+div.team-member {
+    margin-bottom: 2em;
+}
