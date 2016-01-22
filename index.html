@@ -1,82 +1,158 @@
-<!doctype html>
+---
+---
+
+<!DOCTYPE html>
+
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Hermes</title>
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
-        <link rel="stylesheet" href="./css/style.css" />
-        </head>
-        <body>
-            <header>
-                <div>
-                    <h1><img src="img/hermes.svg" alt="Hermes - fast and reliable message broker built on top of Kafka" /></h1>
-                    <p><a href="https://github.com/allegro/hermes">Fork us on Github <svg version="1.1" class="github-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-                    <path d="M16,0C7.164,0,0,7.345,0,16.404c0,7.249,4.584,13.399,10.942,15.567c0.8,0.152,1.058-0.356,1.058-0.789
-                    v-3.056c-4.45,0.993-5.378-1.935-5.378-1.935c-0.727-1.896-1.775-2.4-1.775-2.4c-1.452-1.018,0.109-0.997,0.109-0.997
-                    c1.606,0.115,2.453,1.691,2.453,1.691c1.427,2.508,3.742,1.782,4.656,1.362c0.143-1.06,0.557-1.782,1.016-2.193
-                    c-3.555-0.414-7.289-1.82-7.289-8.108c0-1.791,0.625-3.255,1.648-4.402C7.273,10.73,6.727,9.062,7.594,6.804
-                    c0,0,1.344-0.441,4.401,1.682C13.272,8.122,14.641,7.939,16,7.933c1.359,0.006,2.73,0.189,4.008,0.553
-                    c3.055-2.123,4.396-1.682,4.396-1.682c0.871,2.259,0.323,3.927,0.158,4.341c1.025,1.147,1.646,2.611,1.646,4.402
-                    c0,6.302-3.743,7.69-7.306,8.094C19.476,24.15,20,25.151,20,26.682c0,2.194,0,3.961,0,4.501c0,0.437,0.257,0.947,1.067,0.787
-                    C27.422,29.797,32,23.651,32,16.404C32,7.345,24.836,0,16,0z"></path>
-                    </svg></a></p>
-                </div>
-            </header>
-            <main>
-            <div>
-                <section>
-                    <h2>Fast and reliable message broker built on top of Kafka</h2>
-                </section>
-                <section>
-                    <h2 id="toc_0">Sound foundations</h2>
-                    <p>Hermes builds on widely adopted OpenSource tools - Kafka and Zookeeper.</p>
-                </section>
-                <section>
-                    <h2 id="toc_1">Reliable</h2>
-                    <p>We have been using Hermes in production for mission-critical messaging for 6+ months, processing billions of events and solving many corner-cases. We are constantly monitored by our users looking for 100% delivered events.</p>
-                </section>
-                <section>
-                    <h2 id="toc_2">Stable response time</h2>
-                    <p>Ever needed strict SLA for published events? Hermes takes care of any Kafka hiccups and can guarantee maximum response time for 99th percentile of published events.</p>
-                </section>
-                <section>
-                    <h2 id="toc_3">Fault tolerant</h2>
-                    <p>Network partitioning? Kafka having trouble? Hermes can endure it, staying responsive to clients and sending events to Kafka when problems are over.</p>
-                </section>
-                <section>
-                    <h2 id="toc_4">Low overhead</h2>
-                    <p>Hermes is just a thin wrapper over Kafka - we manage to make lives of developers easier at low cost.</p>
-                </section>
-                <section>
-                    <h2 id="toc_5">Easy to use</h2>
-                    <p>It takes HTTP client to become a publisher and HTTP endpoint to become a subscriber - it can't get any easier then that.</p>
-                </section>
-                <section>
-                    <h2 id="toc_6">We care about subscribers</h2>
-                    <p>Changing pull to push model, we created algorithms that adapt sending speed to subscribers current capabilities.</p>
-                </section>
-                <section>
-                    <h2 id="toc_7">No longer a black box</h2>
-                    <p>We gather a lot of metrics that can be sent to Graphite - track each topic and subscription rate, latency, Kafka lag. We also provide tools that allow for tracking state of each event on chosen topic/subscriptions when closer look is needed.</p>
-                </section>
-                <section>
-                    <h2 id="toc_8">Easy to manage</h2>
-                    <p>We created GUI to manage Hermes (and Kafka) topics and subscriptions. API simplifies common operations like repeating already received events - just give us a timestamp and we will find relevant events on all partitions.</p>
-                </section>
-                <section>
-                    <h2 id="toc_9">Easily extensible</h2>
-                    <p>Hermes components can be used as libraries, with programmatic API that can be easily extended and customized. You can register own callbacks, apply authorization and many more.</p>
-                </section>
-                <section>
-                    <h2 id="toc_10">Easy to get started with</h2>
-                    <p>Thanks to Docker magic, you are able to run Hermes on your localhost in minutes - check out our <a href=http://hermes-pubsub.readthedocs.org/en/latest/quickstart/l">getting started guide</a> for more.</p>
-                </section>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="{{ site.keywords }}">
+    <meta name="description" content="{{ site.description }}">
+
+    <link href="/css/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link href="/css/base.css" rel="stylesheet" media="screen">
+
+    <title>{{ site.title }}</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="/img/hermes.png" alt="Hermes"/>
             </div>
-            </main>
-            <footer>
-                <div>
-                    <p>© 2015 Allegro</p>
+        </div>
+        <div class="row text-center">
+            <h2>Reliable and easy to use message broker built on top of Kafka.</h2>
+        </div>
+        <div class="row hero-bullets text-center">
+            <div class="col-md-3 hero-bullet">
+                <a href="#why">
+                    <i class="fa fa-question fa-4x"></i>
+                    <br/>
+                    <span>Why?</span>
+                </a>
+            </div>
+            <div class="col-md-3 text-center hero-bullet">
+                <a href="http://hermes-pubsub.readthedocs.org/en/latest/quickstart/" target="_blank">
+                    <i class="fa fa-terminal fa-4x"></i>
+                    <br/>
+                    <span>Quickstart</span>
+                </a>
+            </div>
+            <div class="col-md-3 text-center hero-bullet">
+                <a href="http://hermes-pubsub.rtfd.org" target="_blank">
+                    <i class="fa fa-book fa-4x"></i>
+                    <br/>
+                    <span>Documentation</span>
+                </a>
+            </div>
+            <div class="col-md-3 text-center hero-bullet">
+                <a href="https://github.com/allegro/hermes" target="_blank">
+                    <i class="fa fa-github fa-4x"></i>
+                    <br/>
+                    <span>Code</span>
+                </a>
+            </div>
+        </div>
+
+        <section id="why">
+            <h2>Why Hermes?</h2>
+            <div class="row why-bullets">
+                <div class="col-md-5 col-md-offset-1">
+                    <ul>
+                        <li>
+                            <i class="fa fa-magic fa-4x pull-left"></i>
+                            publish by sending http post, consume by creating an http endpoint:
+                            integrate with any technology in seconds
+                        </li>
+                        <li>
+                            <i class="fa fa-database fa-4x pull-left"></i>
+                            Hermes is reliable - never lose a message is our top priority, even when
+                            all things go south
+                        </li>
+                        <li>
+                            <i class="fa fa-area-chart fa-4x pull-left"></i>
+                            everything is measured, just gather the metrics in your metric store
+                        </li>
+                    </ul>
                 </div>
-            </footer>
-        </body>
-    </html>
+                <div class="col-md-5">
+                    <ul>
+                        <li>
+                            <i class="fa fa-clock-o fa-4x pull-left"></i>
+                            Hermes is predicatble with guaranteed maximum response time - it's
+                            easy to provide an SLA
+                        </li>
+                        <li>
+                            <i class="fa fa-map-o fa-4x pull-left"></i>
+                            with message tracking you always know how and when did the messages
+                            go through your system
+                        </li>
+                        <li>
+                            <i class="fa fa-desktop fa-4x pull-left"></i>
+                            managing topics and subscriptions is easy with Hermes Console
+                        </li>
+                        <li>
+                            <i class="fa fa-send-o fa-4x pull-left"></i>
+                            you get all this at a price of sub-millisecond overhead over pure Kafka
+                            (plus network transfer time)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="links">
+            <h2>Our story</h2>
+            <p>
+                <a href="http://allegro.pl">allegro</a> is polish biggest ecommerce site. To sustain our growth, we came to the
+                point when technological revolution could no longer wait. Thus our migration from monolithic to
+                microservice architecture.
+            </p>
+            <p>
+                Soon it became apparent that there are no microservices without async communication and messaging. This
+                is when project Hermes first surfaced. We decided to build it on top of Kafka for it's superb
+                performance and fault tolerance. However we were looking for a tool that would be easy to integrate with,
+                regardless of technology. It should also take care of corner cases and things that require expert
+                knowledge of Kafka design.
+            </p>
+            <p>
+                Hermes helps us integrate our 100+ microservices, at the same time being strongly focused on losing no
+                message. During our time serving production traffic, we encountered a lots of corner cases and situations,
+                where it was hard to keep Kafka cluster stable. Hermes with it's 100% message delivery guarantees
+                had to acquire features, that allow it on accepting traffic even when Kafka is down.
+            </p>
+            <p>
+                This is how Hermes became the heart of our new architecture, serving 4 500 rps of incoming and over
+                12 000 rps of outgoing traffic. Integrating Java, Python, Go and PHP. Allowing our developers to manage
+                their own topics and subscriptions. Making it easy to perform message retransmissions and
+                providing tools for debugging every single message.
+            </p>
+        </section>
+
+        <section id="team">
+            <h2>Development team</h2>
+            <div class="row team text-center">
+                {% for member in site.data.team %}
+                    <div class="col-md-2 team-member">
+                        <a href="{{ member.url }}" target="_blank">
+                            <img src="{{ member.photo }}" class="img-circle"/>
+                            <br/>
+                            {{ member.name }}
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+</body>
+</html>
