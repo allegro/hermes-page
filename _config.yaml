@@ -5,7 +5,6 @@ host: 0.0.0.0
 safe: false
 
 markdown: kramdown
-highlighter: pygments
 
 title:       "Hermes"
 keywords:    "hermes, kafka, message broker, messaging, events"
